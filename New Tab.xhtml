@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html [
+  <!ENTITY % newTabDTD SYSTEM "chrome://browser/locale/newTab.dtd">
+  %newTabDTD;
+  <!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+  %browserDTD;
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  %globalDTD;
+]>
+<html xmlns="http://www.w3.org/1999/xhtml" hasBrowserHandlers="true">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>New Tab</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/global.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/contentSearchUI.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/newTab_002.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="New%20Tab_files/newTab.css" />
+</head>
+
+<body dir="ltr">
+  <div id="newtab-customize-overlay"></div>
+
+  <div class="newtab-customize-panel-container">
+    <div id="newtab-customize-panel" orient="vertical">
+        <div id="newtab-customize-panel-anchor"></div>
+        <div id="newtab-customize-panel-inner-wrapper">
+          <div id="newtab-customize-title" class="newtab-customize-panel-item">
+            <label>NEW TAB CONTROLS</label>
+          </div>
+
+          <div class="newtab-customize-complex-option">
+            <div id="newtab-customize-classic" class="newtab-customize-panel-superitem newtab-customize-panel-item selectable" selected="true">
+                <label>Show your top sites</label>
+            </div>
+            <div id="newtab-customize-enhanced" class="newtab-customize-panel-subitem" selected="true">
+                <label class="checkbox"></label>
+                <label>Include suggested sites</label>
+            </div>
+          </div>
+          <div id="newtab-customize-blank" class="newtab-customize-panel-item selectable">
+            <label>Show blank page</label>
+          </div>
+          <div id="newtab-customize-learn" class="newtab-customize-panel-item">
+            <label>Learn about New Tab</label>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="newtab-vertical-margin">
+    <div id="newtab-margin-top"></div>
+    <div id="newtab-margin-undo-container">
+      <div id="newtab-undo-container" undo-disabled="true">
+        <label id="newtab-undo-label">Thumbnail removed.</label>
+        <button id="newtab-undo-button" tabindex="-1" class="newtab-undo-button">Undo.</button>
+        <button id="newtab-undo-restore-button" tabindex="-1" class="newtab-undo-button">Restore All.</button>
+        <button id="newtab-undo-close-button" tabindex="-1" title="Hide"></button>
+      </div>
+    </div>
+
+    <div id="newtab-search-container">
+      <div id="newtab-search-form">
+        <div id="newtab-search-icon"></div>
+        <input type="text" name="q" id="newtab-search-text" aria-label="Search query" maxlength="256" dir="auto" autocomplete="off" aria-autocomplete="true" aria-controls="searchSuggestionTable" aria-expanded="false" placeholder="Search" />
+        <input type="button" id="newtab-search-submit" value="" aria-label="Submit search" />
+      <table hidden="" id="searchSuggestionTable" class="contentSearchSuggestionTable" role="presentation"><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchDefaultEngineHeader"><img src="blob:null/f9004051-4ec5-42bc-9f6a-f5697ecf034f" />Google Search</td></tr><tr class="contentSearchSuggestionsContainer"><td class="contentSearchSuggestionsContainer"><table class="contentSearchSuggestionsList" role="listbox"></table></td></tr><table class="contentSearchOneOffsTable contentSearchSuggestionsContainer" role="group"><tr class="contentSearchHeaderRow"><td class="contentSearchHeader" id="contentSearchSearchWithHeader">Search with:</td></tr></table><button class="contentSearchSettingsButton contentSearchHeaderRow contentSearchHeader" id="contentSearchSettingsButton" aria-selected="false">Change Search Settings</button></table></div>
+    </div>
+
+    <div id="newtab-horizontal-margin">
+      <div class="newtab-side-margin"></div>
+      <div id="newtab-grid" style="width: 1550px; max-width: 1551px; height: 802px; max-height: 800px;"><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Facebook
+https://www.facebook.com/?_rdr=p" href="https://www.facebook.com/?_rdr=p">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.facebook.com%2F%3F_rdr%3Dp&amp;revision=4314&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">facebook.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="University of Texas Canvas
+http://canvas.utexas.edu/" href="http://canvas.utexas.edu/">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fcanvas.utexas.edu%2F&amp;revision=702&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">canvas.utexas.edu</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="League of Dash's Hair
+https://www.reddit.com/r/leagueoflegends" href="https://www.reddit.com/r/leagueoflegends">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fleagueoflegends&amp;revision=803&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">reddit.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="http://gmail.com/" href="http://gmail.com/">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fgmail.com%2F&amp;revision=4984&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">gmail.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Instagram
+https://www.instagram.com/" href="https://www.instagram.com/">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.instagram.com%2F&amp;revision=865&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">instagram.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="http://www.cs.utexas.edu/~mok/cs378/Spring16/Syllabus.htm" href="http://www.cs.utexas.edu/%7Emok/cs378/Spring16/Syllabus.htm">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fwww.cs.utexas.edu%2F~mok%2Fcs378%2FSpring16%2FSyllabus.htm&amp;revision=5065&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">cs.utexas.edu</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Pastebin.com - #1 paste tool since 2002!
+http://pastebin.com/" href="http://pastebin.com/">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=http%3A%2F%2Fpastebin.com%2F&amp;revision=4805&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">pastebin.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Commits · aashish-sheshadri/cs384G-ray
+https://github.com/aashish-sheshadri/cs384G-ray/commits/master" href="https://github.com/aashish-sheshadri/cs384G-ray/commits/master">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fgithub.com%2Faashish-sheshadri%2Fcs384G-ray%2Fcommits%2Fmaster&amp;revision=8123&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">github.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Hype Music - YouTube
+https://www.youtube.com/playlist?list=PLU-gnpGpAHTmizVlCfehcwK-UE1ICDIkZ" href="https://www.youtube.com/playlist?list=PLU-gnpGpAHTmizVlCfehcwK-UE1ICDIkZ">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Fwww.youtube.com%2Fplaylist%3Flist%3DPLU-gnpGpAHTmizVlCfehcwK-UE1ICDIkZ&amp;revision=1601&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">youtube.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="history"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="lifeandtimesofjv
+https://lifeandtimesofjv.wordpress.com/" href="https://lifeandtimesofjv.wordpress.com/">  <span class="newtab-thumbnail" style="background-image: url(&quot;moz-page-thumb://thumbnail/?url=https%3A%2F%2Flifeandtimesofjv.wordpress.com%2F&amp;revision=6261&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">lifeandtimesofjv.wordpress.com</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="affiliate"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Get Firefox for Android
+http://mzl.la/1Dls1DC" href="http://mzl.la/1Dls1DC">  <span class="newtab-thumbnail" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/a15c0403863847aef5943a6272cd992335f330f9.59611.png&quot;);"></span>  <span class="newtab-thumbnail enhanced-content" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/ef8c1bab9b54c37fddbd8eeb15faf733571fc9f9.64436.png&quot;);"></span>  <span class="newtab-title">Get Firefox for Android</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="affiliate"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Privacy
+https://www.mozilla.org/privacy/tips/?utm_source=directory-tiles&amp;utm_medium=tiles&amp;utm_content=PrivacyV1&amp;utm_campaign=desktop" href="https://www.mozilla.org/privacy/tips/?utm_source=directory-tiles&amp;utm_medium=tiles&amp;utm_content=PrivacyV1&amp;utm_campaign=desktop">  <span class="newtab-thumbnail" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/3ac03b9e0514592f3d2f5b3dfdb9a9dc4ab5ddac.6160.png&quot;);"></span>  <span class="newtab-thumbnail enhanced-content" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/aa5b044615f17199197479531d8de2c00b9d416e.12241.png&quot;);"></span>  <span class="newtab-title">Privacy</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="affiliate"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Firefox Sync
+http://mozilla-europe.org/firefox/sync" href="http://mozilla-europe.org/firefox/sync">  <span class="newtab-thumbnail" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/b4adc58dd3c02da355104977b910255060cfd6d8.10350.png&quot;);"></span>  <span class="newtab-thumbnail enhanced-content" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/d971cbafa0309a201e518acdac4f1ee4dabc7eaa.15109.png&quot;);"></span>  <span class="newtab-title">Firefox Sync</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="affiliate"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Mozilla Webmaker
+https://webmaker.org/?utm_source=directory-tiles&amp;utm_medium=firefox-browser" href="https://webmaker.org/?utm_source=directory-tiles&amp;utm_medium=firefox-browser">  <span class="newtab-thumbnail" style="background-color: rgb(63, 181, 142); background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/583de2b339502a7726bc05736a43b18e9c891350.2193.svg&quot;);"></span>  <span class="newtab-thumbnail enhanced-content" style="background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/720121e7462d8c7863b4dd8fa7b5c1089b5f5fb2.33862.png&quot;);"></span>  <span class="newtab-title">Mozilla Webmaker</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div><div class="newtab-cell"><div class="newtab-site" draggable="true" type="affiliate"><span class="newtab-sponsored">SPONSORED</span><a class="newtab-link" title="Mozilla Developer Network
+https://developer.mozilla.org/en-US/?utm_source=mozilla&amp;utm_medium=firefox-tile&amp;utm_campaign=default" href="https://developer.mozilla.org/en-US/?utm_source=mozilla&amp;utm_medium=firefox-tile&amp;utm_campaign=default">  <span class="newtab-thumbnail" style="background-color: rgb(255, 255, 255); background-image: url(&quot;https://tiles-cloudfront.cdn.mozilla.net/images/8acf9436e1b315f5f04b9435a518bcd1aef131f8.5663.png&quot;);"></span>  <span class="newtab-thumbnail enhanced-content"></span>  <span class="newtab-title">Mozilla Developer Network</span></a><input type="button" title="Pin this site at its current position" class="newtab-control newtab-control-pin" /><input type="button" title="Remove this site" class="newtab-control newtab-control-block" /><span class="newtab-suggested"></span></div></div></div>
+      <div class="newtab-side-margin"></div>
+    </div>
+    <div id="newtab-margin-bottom"></div>
+  </div>
+  <input type="button" id="newtab-customize-button" dir="ltr" title="Customize your New Tab page" />
+</body>
+<script type="text/javascript;version=1.8" src="New%20Tab_files/contentSearchUI.js"></script>
+<script type="text/javascript;version=1.8" src="New%20Tab_files/newTab.js"></script>
+</html>
